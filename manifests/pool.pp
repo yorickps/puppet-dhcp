@@ -20,7 +20,7 @@ define dhcp::pool (
 ) {
 
   dhcp::subnet { $name:
-    netwok         => $network,
+    network        => $network,
     mask           => $mask,
     pools          => [{
         range      => $range,
